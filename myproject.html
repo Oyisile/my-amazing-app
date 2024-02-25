@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword🧩</title>
+    <style>
+        body {
+            background-color: #defcf9;
+        }
+        h1 {
+            text-align: center;
+            color: #2c5d63;
+        }
+        h2 {
+            text-align: center;
+            color: #2c5d63;
+            
+        }
+        img {
+            display: block;
+            margin: auto;
+            box-shadow: 1px 2px #C3EF3C;
+            border-radius: 8px;
+        }
+        h3 {
+            text-align: center;
+            color: #2c5d63;
+        }
+        p {
+            text-align: center;
+            font-size: 17px;
+            color: #2c5d63;
+            margin: 5px 5px;
+        }
+        button {
+            display: block;
+            margin: auto;
+            padding: 15px 18px;
+            border: 1px solid #2c5d63;
+            border-radius: 15px;
+            color: #2c5d63;
+            background: transparent;
+            line-height: 18px;
+        }
+        button:hover {
+            background: #2c5d63;
+            color: #defcf9;
+            transition: all 200ms ease-in-out;
+        }
+        img:hover {
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            display: block
+        }
+        .find {
+            padding: 4px 0;
+            font-weight: bold;
+        }
+        .made-by {
+            text-align: center;
+            color: #2c5d63;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>
+    Crossword🧩
+    </h1>
+    <hr>
+    <h2> The world of Crossword🧩</h2>
+    <img
+     src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/670/original/b994f8333917b3bd9a5008a70e58ee19.jpg?1705929571"
+      alt="Crossword puzzle">
+      <h3> <em> Did you know? </em> </h3>
+    <p>
+    One of the most commonly mentioned motivations for playing crossword puzzles is its link to staving off Alzheimer's.
+    Crossword puzzles can help you enhance your executivefunction and working memory by allowing you to focus your attention on 
+    a specific activity regularly. All of these abilities enhance one's capacity to successfully
+     manage the problems of daily living 
+    while remaining as self-sufficient as possible.
+    </p>
+    <span> <div class="find">
+    <a href="https://www.arkadium.com/blog/benefits-of-crossword-puzzles/"> 
+        Find out more on Arkadium
+        
+    </a>
+    </div>
+    </span>
+    <button>
+        Start playing
+    </button>
+    <br>
+    <div class="made-by">
+        This page was coded by <strong> Oyisile Jozi </strong>
+    </div>
+    </div>
+    <script>
+        alert("Welcome😁🙋‍♀️")
+
+        function startPlaying() {
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email?");
+            let readyTo = prompt("Are you ready to start playing?");
+            readyTo = readyTo.toLowerCase();
+            readyTo = readyTo.trim();
+            if (readyTo === "yes") {
+                alert("Hi " + name + "!" + " Welcome to the world of Crossword😁 ");
+            } else {
+                alert("Hi " + name + "!" + " We hope you'll start soon");
+            }
+
+        }
+        let playing = document.querySelector("button")
+        playing.addEventListener("click", startPlaying);
+    </script>
+</body>
+</html>
